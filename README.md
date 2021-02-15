@@ -91,7 +91,7 @@ NoSQL이 낯설어서 collection-document의 구조에 적용하기 불편한 �
 ![1](https://user-images.githubusercontent.com/73573249/107948275-f8a24280-6fd6-11eb-992f-1ad7e6458e27.png)
 ![2](https://user-images.githubusercontent.com/73573249/107948278-f9d36f80-6fd6-11eb-8ab8-f8ded1749e73.png)
 ![3](https://user-images.githubusercontent.com/73573249/107948287-fc35c980-6fd6-11eb-8ac3-839b6f891ef7.png)
-![4](https://user-images.githubusercontent.com/73573249/107948290-fdff8d00-6fd6-11eb-9831-68c2845432e0.png)
+![4](https://user-images.githubusercontent.com/73573249/107949024-fb516780-6fd7-11eb-9e02-380f0e0c3dc3.png)
 
 
 메인페이지
@@ -107,7 +107,7 @@ NoSQL이 낯설어서 collection-document의 구조에 적용하기 불편한 �
 
 
 판매자 거래 내역 페이지
-![8](https://user-images.githubusercontent.com/73573249/107948304-02c44100-6fd7-11eb-8058-c9f65879cad5.png)
+![8](https://user-images.githubusercontent.com/73573249/107949030-fe4c5800-6fd7-11eb-8892-60cc0c20f40e.png)
 ![9](https://user-images.githubusercontent.com/73573249/107948321-06f05e80-6fd7-11eb-8720-6b9b51aa61f0.png)
 
 
