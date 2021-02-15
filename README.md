@@ -1,5 +1,7 @@
 # FirstApp_Android
 
+![0](https://user-images.githubusercontent.com/73573249/107948509-4323bf00-6fd7-11eb-9846-0514f0596f84.png)
+
 처음 만들었던 안드로이드 앱입니다.
 
 사용자간 중고 거래 커뮤니티를 만들어보고자 '사용자간 렌탈 서비스'를 주제로 기획한 앱입니다.
@@ -84,3 +86,43 @@ NoSQL이 낯설어서 collection-document의 구조에 적용하기 불편한 �
 10. 신고 및 블랙리스트 기능
 	게시자/대여자에 대하여 도난/사기 등의 혐의에 대하여 신고할 수 있는 기능
 	신고 접수된 건에 대하여 확인절차 이전까지 해당 사용자가 작성한 모든 게시글에 신고 접수건수가 표시됨
+
+회원가입
+![1](https://user-images.githubusercontent.com/73573249/107948275-f8a24280-6fd6-11eb-992f-1ad7e6458e27.png)
+![2](https://user-images.githubusercontent.com/73573249/107948278-f9d36f80-6fd6-11eb-8ab8-f8ded1749e73.png)
+![3](https://user-images.githubusercontent.com/73573249/107948287-fc35c980-6fd6-11eb-8ac3-839b6f891ef7.png)
+![4](https://user-images.githubusercontent.com/73573249/107948290-fdff8d00-6fd6-11eb-9831-68c2845432e0.png)
+
+
+메인페이지
+![5](https://user-images.githubusercontent.com/73573249/107948293-ff30ba00-6fd6-11eb-99a8-9b1847cf9e3b.png)
+
+
+게시글 목록 페이지
+![6](https://user-images.githubusercontent.com/73573249/107948295-0061e700-6fd7-11eb-878a-e17a1b0cf488.png)
+
+
+게시글 조회
+![7](https://user-images.githubusercontent.com/73573249/107948299-01931400-6fd7-11eb-9c44-856dfce18175.png)
+
+
+판매자 거래 내역 페이지
+![8](https://user-images.githubusercontent.com/73573249/107948304-02c44100-6fd7-11eb-8058-c9f65879cad5.png)
+![9](https://user-images.githubusercontent.com/73573249/107948321-06f05e80-6fd7-11eb-8720-6b9b51aa61f0.png)
+
+
+문의 기능 - 채팅목록
+![10](https://user-images.githubusercontent.com/73573249/107948332-0952b880-6fd7-11eb-8702-7c15f1f8afee.png)
+
+
+채팅 기능
+![11](https://user-images.githubusercontent.com/73573249/107948336-0a83e580-6fd7-11eb-824c-3a33a4f45846.png)
+
+
+거래 화면
+![12](https://user-images.githubusercontent.com/73573249/107948344-0c4da900-6fd7-11eb-8edb-1979c09f85a4.png)
+![13](https://user-images.githubusercontent.com/73573249/107948359-0f489980-6fd7-11eb-8775-f4d04858a0e6.png)
+
+
+대여 현황 관리
+![14](https://user-images.githubusercontent.com/73573249/107948365-1079c680-6fd7-11eb-82fa-57c7d7372ca0.png)
