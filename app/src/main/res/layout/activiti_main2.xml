@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E0F3"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+android:id="@+id/ll_banner"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+    android:background="#E3E0F3"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_goback"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ic_goback2" />
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="8"
+            android:background="@drawable/banner2" />
+
+        <Button
+            android:id="@+id/btn_myhome"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ic_myhome" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/id_pw_edge"
+        android:hint="상품명입력"
+        android:paddingLeft="20dp"
+        android:textSize="15dp"
+        android:editable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_banner" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_search">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="#ffffffff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btn_fashion"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_margin="3dp"
+                        android:background="#ffffff"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/cat_fashion" />
+
+                    <TextView
+                        android:id="@+id/cat_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/btn_fashion"
+                        android:layout_alignBottom="@+id/btn_fashion"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="의류/잡화"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btn_kids"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_margin="3dp"
+                        android:background="#ffffff"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/cat_toy" />
+
+                    <TextView
+                        android:id="@+id/cat_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/btn_kids"
+                        android:layout_alignEnd="@+id/btn_kids"
+                        android:layout_alignBottom="@+id/btn_kids"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="유아"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btn_sports"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_margin="3dp"
+                        android:background="#ffffff"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/cat_sports" />
+
+                    <TextView
+                        android:id="@+id/cat_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/btn_sports"
+                        android:layout_alignEnd="@+id/btn_sports"
+                        android:layout_alignBottom="@id/btn_sports"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="스포츠/건강"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btn_pet"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_margin="3dp"
+                        android:background="#ffffff"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/cat_pet" />
+
+                    <TextView
+                        android:id="@+id/cat_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/btn_pet"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="반려동물용품"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btn_homes"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_margin="3dp"
+                        android:background="#ffffff"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/cat_home" />
+
+                    <TextView
+                        android:id="@+id/cat_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/btn_homes"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="홈/인테리어"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btn_life"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_margin="3dp"
+                        android:background="#ffffff"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/cat_life" />
+
+                    <TextView
+                        android:id="@+id/cat_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/btn_life"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="생필품"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btn_car"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_margin="3dp"
+                        android:background="#ffffff"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/cat_car" />
+
+                    <TextView
+                        android:id="@+id/cat_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/btn_car"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="자동차용품"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btn_digital"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_margin="3dp"
+                        android:background="#ffffff"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/cat_digital" />
+
+                    <TextView
+                        android:id="@+id/cat_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/btn_digital"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="디지털/가전"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btn_book"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_margin="3dp"
+                        android:background="#ffffff"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/cat_book" />
+
+                    <TextView
+                        android:id="@+id/cat_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/btn_book"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="도서/음반"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btn_office"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_margin="3dp"
+                        android:background="#ffffff"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/cat_office" />
+
+                    <TextView
+                        android:id="@+id/cat_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/btn_office"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="오피스
+"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btn_jewelry"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_margin="3dp"
+                        android:background="#ffffff"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/cat_jewelry" />
+
+                    <TextView
+                        android:id="@+id/cat_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/btn_jewelry"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="뷰티/악세사리"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btn_health"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_margin="3dp"
+                        android:background="#ffffff"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/cat_health" />
+
+                    <TextView
+                        android:id="@+id/cat_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/btn_health"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="헬스"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#673AB7" />
+
+                <TextView
+                    android:id="@+id/textView56"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:paddingLeft="20dp"
+                    android:text="실시간 인기상품"
+                    android:textColor="#673AB7"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_best"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/startview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#E3E0F3"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/main_banner" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

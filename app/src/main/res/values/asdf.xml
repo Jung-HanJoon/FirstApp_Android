@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="periot">
+        <item>일</item>
+        <item>주</item>
+        <item>달</item>
+        <item>년</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>의류/잡화</item>
+        <item>완구/취미</item>
+        <item>스포츠/레져</item>
+        <item>반려동물용품</item>
+        <item>홈/인테리어</item>
+        <item>생활용품</item>
+        <item>자동차용품</item>
+        <item>디지털/가전</item>
+        <item>도서/음반/DVD</item>
+        <item>문구/오피스</item>
+        <item>뷰티/악세사리</item>
+        <item>헬스</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>문의유형선택</item>
+        <item>기간연장/중도반납</item>
+        <item>분실/파손</item>
+        <item>보증금 문의</item>
+        <item>택배거래문의</item>
+
+    </string-array>
+
+    <string-array name="ret">
+        <item>반납유형선택</item>
+        <item>중도반납</item>
+        <item>만기반납</item>
+        <item>거래취소</item>
+
+
+    </string-array>
+
+    <string-array name="dec">
+        <item>신고종류선택</item>
+        <item>사기</item>
+        <item>연락불가능</item>
+        <item>사진과 다른물품</item>
+        <item>시스템문제</item>
+        <item>기타</item>
+
+    </string-array>
+
+    <string-array name="songjang">
+        <item>직거래</item>
+        <item>우체국</item>
+        <item>CJ대한통운</item>
+        <item>한진택배</item>
+        <item>롯데택배</item>
+        <item>로젠택배</item>
+        <item>홈픽택배</item>
+        <item>CVSnet편의점택배</item>
+        <item>CU 편의점택배</item>
+        <item>경동택배</item>
+        <item>대신택배</item>
+        <item>일양로지스</item>
+        <item>합동택배</item>
+        <item>건영택배</item>
+        <item>천일택배</item>
+        <item>호남택배</item>
+        <item>한덱스</item>
+        <item>EMS</item>
+        <item>TNT Express</item>
+        <item>Fedex</item>
+        <item>기타</item>
+
+
+    </string-array>
+
+    <string-array name="bank">
+        <item>은행선택</item>
+        <item>현금</item>
+        <item>국민</item>
+        <item>신한</item>
+        <item>우리</item>
+        <item>카카오</item>
+        <item>K뱅크</item>
+        <item>토스</item>
+        <item>하나</item>
+        <item>우체국</item>
+        <item>새마을</item>
+        <item>농협</item>
+        <item>수협</item>
+        <item>전북</item>
+        <item>부산</item>
+        <item>SC제일</item>
+        <item>기타</item>
+    </string-array>
+
+
+
+</resources>
+

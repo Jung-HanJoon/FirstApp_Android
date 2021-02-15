@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rentaldream">
+
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+
+
+
+
+
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="빌려드림"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:requestLegacyExternalStorage="true"
+        >
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+        <activity android:name=".ui.SignUpActivity"/>
+        <activity android:name=".ui.MainActivity"/>
+        <activity android:name=".ui.PostViewActivity"/>
+        <activity android:name=".ui.MyHomeActivity"/>
+        <activity android:name=".ui.FirstShowActivity"/>
+        <activity android:name=".ui.ActivityChat"/>
+        <activity android:name=".ui.ActivityTalk"/>
+        <activity android:name=".ui.ActivityContract"/>
+        <activity android:name=".ui.ActivityReport"/>
+        <activity android:name=".ui.ActivityUserInfo"/>
+        <activity android:name=".ui.ActivityRentalList"/>
+
+        <activity android:name=".ui.LoginActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+    </application>
+
+</manifest>

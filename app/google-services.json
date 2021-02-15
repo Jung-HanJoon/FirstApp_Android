@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "743803043625",
+    "firebase_url": "https://rentaldream-365f0.firebaseio.com",
+    "project_id": "rentaldream-365f0",
+    "storage_bucket": "rentaldream-365f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743803043625:android:ffb4372bfe5fe189364138",
+        "android_client_info": {
+          "package_name": "com.example.rentaldream"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743803043625-5pil9uh9mv5bhpq52v7ku5jpcsq3cr4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWYVLwwD4_JpyxGbBE5zoY-vQBhte-U4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743803043625-5pil9uh9mv5bhpq52v7ku5jpcsq3cr4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E3E0F3"
+    tools:context=".ui.SignUpActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:lineSpacingExtra="14sp"
+        android:text="회원가입"
+        android:textColor="#673AB7"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/sv_check"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#F9F8FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:text="이용약관\n
+                \n
+개발한 앱의 서비스를 사용자가 더욱 신뢰를 가지고 이용하며, 악용하지 않도록 하기위한 장치로 이용약관을 작성하여 작품이 제공하는 서비스의 상품으로서의 가치에 완성도를 더했습니다.\n
+\n
+1.계정관련\n
+\n
+본 모바일 서비스 특성상 회원가입에 필요한 요구사항은 실제 휴대전화의 소유주와 계좌의 실소유자와 일치해야하기때문에 이같은 요구사항이 필요합니다.\n
+- 회원으로 가입하여 본 서비스를 이용하고자 하는 이용자는 '빌려드림'에서 요청하는 회원정보를 제공하여야합니다.\n
+- 회원가입은 반드시 실명으로만 가입할 수 있으며 '빌려드림'은 실명 확인 조치를 할 수 있습니다\n
+- 회원가입에 필요한 계좌는 반드시 자신의 명의로만 사용가능하며 '빌려드림'은 실명 확인 조치를 할 수 있습니다.\n
+\n
+- 계정은 본인만 이용 할 수 있으며 다른사람에게 이용을 허락하거나 양도할 수 없습니다.\n
+- 사용자는 관련된 정보, 프로필사진이나 닉네임을 변경 할 수있습니다 . 휴대폰번호가 바뀐경우는 고객센터를 이용해주시기바랍니다.\n
+\n
+\n
+2.용어의정의\n
+\n
+- 회원 : 이 약관을 승인하고 '빌려드림'과 서비스이용계약을 체결한 자를 말합니다. 회원은 렌탈자와 구매자로 구분됩니다.\n
+- 아이디(ID) : 회원의 식별과 서비스 이용을 위하여 회원이 설정하고 '빌려드림'이 승인한 문자나 숫자의 조합을 말합니다.\n
+- 비밀번호: 회원의 동일성 확인과 회원정보의 보호를 위하여 회원이 설정하고 '빌려드림'이 승인한 문자나 숫자의 조합을 말합니다.\n
+- 계좌번호 : 보다 확실한 정보를 확인하기위해 계좌 실소유자와 핸드폰 소유자와 일치하는지 확인합니다.\n
+- 찜★ :  자신이 원하는 물품에 확신이 없을 경우 찜 버튼을눌러 물품을 비교할 수 있는 기능입니다.\n
+- 신용도 : 회원간 물품거래서비스 이용과 관련하여 사용자가 정한 평가기준에 따라 회원에게 부여하는 신용점수 및 등급을 부여하는  기타 서비스를 말합니다\n
+- 닉네임:  모바일서비스에서 아이디와 함꼐 판매자를 식별하기 위하여 이용자의 신청과 '빌려드림'의 승인에 의하여 설정되는숫자와 문자의 조합으로 사용됩니다.\n
+- 개발자 : 서비스의 전반적인 관리와 원활한 운영을 위하여 선정한 자를 말합니다.\n
+- 렌탈안전서비스: 구매자와 렌탈자와의 결제대금의 보호를 위해 일정기간동안 '빌려드림'에서 제공하는서비스입니다.\n
+- 보증금 : 렌탈자에 물품을 훼손,파손,분실 할 경우 보증금에서 렌탈비 별도로 깍이는 서비스입니다. 본 상품 그대로 돌려받을시 보증금은 다시 회수 할 수 있습니다.\n
+- 렌탈비 : 렌탈자의 물품과 거래를 하기 위해서는 렌탈자의 물품에 대한 이용요금을 지불하는것입니다.\n
+\n
+3.서비스 이용\n
+\n
+구매자:   -회원가입을 하여 자신의 정보를 요청받아 다른 사람과 거래할 렌탈물품을 찾아 물품정보를보고 상대방과 연락을 취한후 거래를 하는방식입니다.\n
+	-물품 수령 후 6시간 내로 렌탈자의 물품등록에 물품으로 올라온 사진의 각도 그대로 렌탈자에게  사진찍은 후 발송 과 '빌려드림'에 사진 첨부\n
+\n
+렌탈자:	-회원가입을 하여 자신의 정보를 요청받아 자신이 거래를 하고 싶은 물품을 등록에 필요한 정보를 기입 후 등록한 후 구매자와 연락을 하여 거래를하는방식입니다.\n
+ 	-물품 발송 후 택배서비스를 확인하여 구매자의 물품이 도착한 메세지를 받고 구매자에게 사진을 요구하기\n
+\n
+- 물품등록 후 인기있는 상품서비스를 위하여 7일 이내는 자동삭제됩니다.\n
+\n
+4. 렌탈해지 환급금\n
+렌탈 도중 해지 시 발생되는 환급금(렌탈비용에서 차감됨)이며, 소유자(갑)은 약관에 명시된 한도를 초과하여 위약금을 부과할 수 없습니다.\n
+\n
+\n*기간별 환급한도\n
+7일 이내 / (렌탈비의 95%)\n
+1개월 이내 / (렌탈비의40%)\n
+3개월 이내 / (렌탈비의 20%)\n
+6개월 이내 / (렌탈비의10%)\n
+
+\n
+\n
+구매자는 렌탈자에게 렌탈비를 요구하시면됩니다.\n
+렌탈자는 이에 따른 환급금을 정확하게 돌려줍니다. 이에 발생되는 모든 책임은 렌탈자에 책임입니다.\n
+\n
+5.보증금 \n
+렌탈자의 물품을 훼손,파손,분실 할 경우 렌탈자가 요구했던 보증금에서 깍이는 서비스입니다.\n
+- 간단스크레치: 보증금의 최대 30%\n
+- 과도한 스크래치 : 보증금의 최대 70%\n
+- 분실 : 보증금 전액 \n
+- 상품 바꿔치기 : 법적대응 (렌탈자 물품의 정품을 인증할 수 있는 사진이 있을시.)\n
+\n
+6.서비스 이용의 제한 및 중지\n
+- 사용자의 신고를 확인하여 본 서비스에 해를 가하는 사람은 사용을 제한됩니다.\n
+- 렌탈자의 물품 바꿔치기 시 서비스 사용에 제한 됩니다.\n
+- 서비스를 영리나 홍보 목적으로 이용하는 행위\n
+- 잘못된 방법으로 서비스의 제공을 방해하거나 '빌려드림'에서 제공하는 방법 이외의 다른방법을 사용하는경우\n
+- 다른 이용자의 정보를 무단으로 수집, 이용하거나 다른 사람들에게 제공하는 행위\n
+- 음란 정보나 저작권 침해 정보 등 공서양속 및 법령에 위반되는 내용의 정보 등을 발송하거나 게시하는 행위\n
+\n
+\n
+--------2020.04.07. 이용약관 개정-----------\n\n\n\n\n\n\n\n\n\n\n"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btn_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/colorbutton"
+                android:text="확인했습니다." />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/sv_signup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_sign"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_id"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/id_pw_edge"
+                android:hint="아이디"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_pass"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/id_pw_edge"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/et_id"
+                app:layout_constraintStart_toStartOf="@+id/et_id"
+                app:layout_constraintTop_toBottomOf="@+id/et_id" />
+
+            <EditText
+                android:id="@+id/et_pass2"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/id_pw_edge"
+                android:hint="비밀번호 재확인"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/et_pass"
+                app:layout_constraintStart_toStartOf="@+id/et_pass"
+                app:layout_constraintTop_toBottomOf="@+id/et_pass" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/id_pw_edge"
+                android:hint="이름"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/et_pass2"
+                app:layout_constraintStart_toStartOf="@+id/et_pass2"
+                app:layout_constraintTop_toBottomOf="@+id/et_pass2" />
+
+            <EditText
+                android:id="@+id/et_jumin"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/id_pw_edge"
+                android:digits="1234567890"
+                android:hint="주민번호"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingLeft="15dp"
+                app:layout_constraintStart_toStartOf="@+id/et_name"
+                app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+            <EditText
+                android:id="@+id/et_jumin2"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:background="@drawable/id_pw_edge"
+                android:digits="1234567890"
+                android:inputType="numberPassword"
+                android:maxLength="7"
+                android:paddingLeft="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/et_name"
+                app:layout_constraintTop_toTopOf="@+id/et_jumin" />
+
+            <EditText
+                android:id="@+id/et_tel"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/id_pw_edge"
+                android:digits="1234567890-"
+                android:hint="휴대폰번호"
+                android:inputType="phone"
+                android:maxLength="13"
+                android:paddingLeft="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/et_jumin2"
+                app:layout_constraintStart_toStartOf="@+id/et_jumin"
+                app:layout_constraintTop_toBottomOf="@+id/et_jumin" />
+
+            <TextView
+                android:id="@+id/text-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ㅡ"
+                app:layout_constraintBottom_toBottomOf="@+id/et_jumin"
+                app:layout_constraintEnd_toStartOf="@+id/et_jumin2"
+                app:layout_constraintStart_toEndOf="@+id/et_jumin"
+                app:layout_constraintTop_toTopOf="@+id/et_jumin" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_sign"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/id_pw_edge"
+
+        android:text="회원가입"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
