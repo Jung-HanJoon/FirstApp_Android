@@ -719,7 +719,7 @@ public class ActivityTalk extends AppCompatActivity {
                 public Map<String, String> getHeaders() throws AuthFailureError {
                     Map<String, String> header = new HashMap<>();
                     header.put("content-type", "application/json");
-                    header.put("authorization", "key=AAAArS4dvyk:APA91bElETDmLiNMtqcyAVPTnU8o-_DMtMRGzd298vpL9QWO8Kfu1nqbJsCYS0H3Q80Q8s7-G8oavVQptdTu_ojzI0tsKo4Z-iXRtidFmBEGammCcaKrOr6GBz-XWJPtLsKIs86OMbAX");
+                    header.put("authorization", "key=defalut_key");
                     return header;
                 }
             };
